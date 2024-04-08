@@ -4,7 +4,9 @@
   "description": "My Node Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "chmod +x node_modules/nodemon",
+    "start": "nodemon index.js"
   },
   "author": "Monch Dacumos",
   "license": "ISC",
