@@ -52,7 +52,6 @@ webApp.get('/'+uID+'/filteredResults/', (req, res) => {
             let filteredResults = [{"response":[{"questions":[]}]}]
 
             for (const [key, value] of dataArray) {
-                console.log(`Key: ${key}, Value: ${value}`);
                 for (let i = 0; i < filters.length; i++) {
                     if (filters[i].id === key) {
                         switch(filters[i].condition) {
